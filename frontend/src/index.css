@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+body{
+  background: linear-gradient(to top, #ccffff 10%, #ffcc99 100%);
+  color: black;
+  font-family:'Source Sans Pro', sans-serif;
+}
 main {
   min-height: 80vh;
 }
@@ -19,12 +26,55 @@ h2 {
 .rating span {
   margin: 0.1rem;
 }
-
+.pagetitle{
+  color: rgb(0, 255, 68);
+}
+.latest{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(63, 63, 63);
+}
+.lightborderboxclass{
+  box-shadow: -1px 1px 4px rgba(0,0,0,0.5),1px -0.5px 1px rgba(255, 255, 255, 0.5);
+  margin: 5px;
+  border-radius: 5px;
+  transition: all ease-in-out 0.2s;
+}
+.lightborderboxclass:hover{
+  box-shadow: -3px 2px 4px rgba(0,0,0,0.5),1px -0.5px 1px rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.borderboxclass{
+  box-shadow: -3px 2px 4px rgba(0,0,0,0.5),1px -0.5px 1px rgba(255, 255, 255, 0.5);
+  /* margin-left: 5px; */
+  border-radius: 5px;
+  transition: all ease-in-out 0.4s;
+}
+.borderboxclass:hover{
+  box-shadow: -3px 2px 8px rgba(0,0,0,0.5),1px -0.5px 1px rgba(255, 255, 255, 0.5);
+}
+.lighttextshadowclass{
+  text-shadow: -1.5px 1px 2px rgba(0,0,0,0.5),1px -0.5px 0.5px rgba(255, 255, 255, 0.5);
+  transition: all ease-in-out 0.5s;
+}
+.lighttextshadowclass:hover{
+}
+.textshadowclass{
+  text-shadow: -3px 2px 4px rgba(0,0,0,0.5),1px -0.5px 1px rgba(255, 255, 255, 0.5);
+}
+.textshadowclass:hover{
+  text-shadow: -3px 2px 6px rgba(0,0,0,0.5),1px -0.5px 1px rgba(255, 255, 255, 0.5);
+}
 /* carousel */
 .carousel-item-next,
 .carousel-item-prev,
 .carousel-item.active {
   display: flex;
+  border-radius: 5px;
+  background: linear-gradient(to top right, #f0ffff -180%, #ffffff 120%);
+  /* box-shadow: -3px 2px 5px rgba(0,0,0,0.5),1px -0.5px 1px rgba(255, 255, 255, 0.5); */
+  /* background: none !important; */
 }
 .carousel-caption {
   position: absolute;
@@ -32,7 +82,7 @@ h2 {
 }
 
 .carousel-caption h2 {
-  color: #fff;
+  color: #272727;
 }
 
 .carousel img {
@@ -50,4 +100,14 @@ h2 {
   .carousel-caption h2 {
     font-size: 2.5vw;
   }
+}
+
+.carousel-control-prev, .carousel-control-next{
+  /* background: rgba(0,0,0,0.1); */
+  /* box-shadow: -3px 2px 5px rgba(0,0,0,0.5),1px -0.5px 1px rgba(255, 255, 255, 0.5); */
+  /* top: 50%;
+  left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); */
 }
